@@ -18,7 +18,7 @@ public class PersonSorter {
         arr[4] = new Person("aaa", "aaa");
 
         System.out.println("Før sortering: " + Arrays.toString(arr));
-        QuickSortPerson.sort(arr);
+        QuickSort.sort(arr);
         System.out.println("Efter sortering: " + Arrays.toString(arr));
     }
 }
