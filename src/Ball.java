@@ -1,4 +1,4 @@
-public class Ball {
+public class Ball  implements Comparable{
     private int brightness;
 
     public Ball() {
@@ -19,5 +19,10 @@ public class Ball {
 
     public String toString() {
         return Integer.toString(brightness);
+    }
+
+    public int compareTo(Object o) {
+        Ball otherBall = (Ball) o;
+        return this.brightness - otherBall.brightness;
     }
 }
