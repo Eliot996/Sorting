@@ -9,7 +9,7 @@ public class BallSorter {
         }
 
         System.out.println("Før sortering: " + Arrays.toString(balls));
-        Arrays.sort(balls);
+        QuickSort.sort(balls);
         System.out.println("Efter sortering: " + Arrays.toString(balls));
     }
 
