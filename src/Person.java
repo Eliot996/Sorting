@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Comparable{
     private String firstName;
     private String lastName;
 
@@ -12,10 +12,10 @@ public class Person {
         return lastName + ", " + firstName;
     }
 
-    public int compareTo(Person person) {
+    public int compareTo(Object person) {
         //return this.firstName.compareTo(person.firstName);
         //return -1;
-        return firstNameCompare(person);
+        return firstNameCompare((Person) person);
     }
 
     private int firstNameCompare(Person person) {
